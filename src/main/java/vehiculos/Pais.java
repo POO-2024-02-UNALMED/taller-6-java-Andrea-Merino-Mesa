@@ -18,8 +18,7 @@ public class Pais{
 		for(int i = 0; i < paises.size(); i++){
 			if(paises.get(i).cantidadvendidos>=paisvendedor.cantidadvendidos) {
 				paisvendedor=paises.get(i);
-			}
-		}
+			}}
 		return paisvendedor;
 	}
 	

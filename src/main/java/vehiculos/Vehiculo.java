@@ -9,8 +9,9 @@ public class Vehiculo{
 	int peso;
 	String traccion;
 	Fabricante fabricante;
+	int CantidadVehiculos;
 	
-	Vehiculo(String placa,int puerta,int velocidad,String nombre, int precio, int peso,String traccion,Fabricante fabricante){
+	public Vehiculo(String placa,int puerta,int velocidad,String nombre, int precio, int peso,String traccion,Fabricante fabricante){
 		puertas=puerta;
 		velocidadMaxima=velocidad;
 		this.traccion=traccion;
@@ -18,77 +19,87 @@ public class Vehiculo{
 		this.nombre=nombre;
 		this.precio=precio;
 		this.peso=peso;
-		setFabricante(fabricante);	
+		setFabricante(fabricante);
+		CantidadVehiculos++;
 	}
 	
-	String vehiculosPorTipo() {
+	public String vehiculosPorTipo() {
 		return "Automoviles: "+Automovil.cantidadautomoviles+"Camionetas: "+Camioneta.cantidadcamionetas+"Camiones: "+Camion.cantidadcamiones;
 	}
 
 	
-	String getPlaca() {
+	public String getPlaca() {
 		return this.placa;
 	}
 	
-	void setPlaca(String placa) {
+	public void setPlaca(String placa) {
 		this.placa=placa;
 	}
 	
-	int getPuertas() {
+	public int getPuertas() {
 		return this.puertas;
 	}
 	
-	void setPuertas(int Puertas) {
+	public void setPuertas(int Puertas) {
 		this.puertas=Puertas;
 	}
 	
-	int getVelocidadMaxima() {
+	public int getVelocidadMaxima() {
 		return this.velocidadMaxima;
 	}
 	
-	void setVelocidadMaxima(int velocidadMaxima) {
+	public void setVelocidadMaxima(int velocidadMaxima) {
 		this.velocidadMaxima=velocidadMaxima;
 	}
 	
-	String getNombre() {
+	public String getNombre() {
 		return this.nombre;
 	}
 	
-	void setNombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre=nombre;
 	}
 	
-	int getPrecio() {
+	public int getPrecio() {
 		return this.precio;
 	}
 	
-	void setPrecio(int precio) {
+	public void setPrecio(int precio) {
 		this.precio=precio;
 	}
 	
-	int getPeso() {
+	public int getPeso() {
 		return this.peso;
 	}
 	
-	void setPeso(int peso) {
+	public void setPeso(int peso) {
 		this.peso=peso;
 	}
 	
-	String getTraccion() {
+	public String getTraccion() {
 		return this.traccion;
 	}
 	
-	void setTraccion(String traccion) {
+	public void setTraccion(String traccion) {
 		this.traccion=traccion;
 	}
 	
-	Fabricante getFabricante() {
+	public Fabricante getFabricante() {
 		return this.fabricante;
 	}
 	
-	void setFabricante(Fabricante fabricante) {
+	public void setFabricante(Fabricante fabricante) {
 		this.fabricante=fabricante;
 		fabricante.setCantidadVendidos(1);
 	}
+	
+	public int getCantidadVehiculos() {
+		return this.CantidadVehiculos;
+	}
+	
+	public void setCantidadVehiculos(int CantidadVehiculos) {
+		this.CantidadVehiculos=CantidadVehiculos;
+	}	
+	
 
 }

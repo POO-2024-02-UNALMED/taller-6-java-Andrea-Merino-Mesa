@@ -22,11 +22,11 @@ public class Fabricante{
 		return fabricavendedor;
 	}
 	
-	int getCantidadVendidos() {
+	public int getCantidadVendidos() {
 		return cantidadvendidos;
 	}
 	
-	void setCantidadVendidos(int x) {
+	public void setCantidadVendidos(int x) {
 		cantidadvendidos+=x;
 		this.pais.cantidadvendidos++;
 	}
@@ -34,4 +34,17 @@ public class Fabricante{
 	public String getNombre() {
 		return this.nombre;
 	}
+	
+	public void setNombre(String nombre) {
+		this.nombre=nombre;
+	}
+	
+	public Pais getPais() {
+		return this.pais;
+	}
+	
+	public void setNombre(Pais pais) {
+		this.pais=pais;
+	}	
+	
 }

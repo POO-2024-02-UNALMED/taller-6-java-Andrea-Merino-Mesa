@@ -8,11 +8,11 @@ public class Automovil extends Vehiculo{
 		this.puestos=puestos;
 		cantidadautomoviles++;
 	}
-	int getPuestos() {
+	public int getPuestos() {
 		return this.puestos;
 	}
 	
-	void setPuestos(int puestos) {
+	public void setPuestos(int puestos) {
 		this.puestos=puestos;
 	}
 }
