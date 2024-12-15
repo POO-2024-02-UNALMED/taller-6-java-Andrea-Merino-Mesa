@@ -10,6 +10,7 @@ public class Camioneta extends Vehiculo{
 		this.volco=volco;
 		cantidadcamionetas++;
 	}
+	
 	public boolean isVolco() {
 		return this.volco;
 	}

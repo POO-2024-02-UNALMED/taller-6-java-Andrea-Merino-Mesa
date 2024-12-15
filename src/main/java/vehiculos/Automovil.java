@@ -10,6 +10,7 @@ public class Automovil extends Vehiculo{
 		this.puestos=puestos;
 		cantidadautomoviles++;
 	}
+	
 	public int getPuestos() {
 		return this.puestos;
 	}
