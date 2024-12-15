@@ -2,6 +2,7 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Fabricante{
+	
 	private String nombre;
 	private Pais pais;
 	int cantidadvendidos;

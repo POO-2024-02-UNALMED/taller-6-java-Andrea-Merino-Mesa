@@ -9,7 +9,7 @@ public class Vehiculo{
 	int peso;
 	String traccion;
 	Fabricante fabricante;
-	int CantidadVehiculos;
+	static int CantidadVehiculos;
 	
 	public Vehiculo(String placa,int puerta,int velocidad,String nombre, int precio, int peso,String traccion,Fabricante fabricante){
 		puertas=puerta;
@@ -23,7 +23,7 @@ public class Vehiculo{
 		CantidadVehiculos++;
 	}
 	
-	public String vehiculosPorTipo() {
+	public static String vehiculosPorTipo() {
 		return "Automoviles: "+Automovil.cantidadautomoviles+"Camionetas: "+Camioneta.cantidadcamionetas+"Camiones: "+Camion.cantidadcamiones;
 	}
 
@@ -93,11 +93,11 @@ public class Vehiculo{
 		fabricante.setCantidadVendidos(1);
 	}
 	
-	public int getCantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return this.CantidadVehiculos;
 	}
 	
-	public void setCantidadVehiculos(int CantidadVehiculos) {
+	public static void setCantidadVehiculos(int CantidadVehiculos) {
 		this.CantidadVehiculos=CantidadVehiculos;
 	}	
 	
