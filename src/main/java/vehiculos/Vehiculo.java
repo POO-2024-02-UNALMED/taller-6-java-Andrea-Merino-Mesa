@@ -94,11 +94,11 @@ public class Vehiculo{
 	}
 	
 	public static int getCantidadVehiculos() {
-		return this.CantidadVehiculos;
+		return CantidadVehiculos;
 	}
 	
-	public static void setCantidadVehiculos(int CantidadVehiculos) {
-		this.CantidadVehiculos=CantidadVehiculos;
+	public static void setCantidadVehiculos(int CVehiculos) {
+		CantidadVehiculos=CVehiculos;
 	}	
 	
 

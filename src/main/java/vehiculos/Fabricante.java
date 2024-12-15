@@ -18,8 +18,7 @@ public class Fabricante{
 		for(int i = 0; i < fabricantes.size(); i++){
 			if(fabricantes.get(i).cantidadvendidos>=fabricavendedor.cantidadvendidos) {
 				fabricavendedor=fabricantes.get(i);
-			}
-		}
+			}}
 		return fabricavendedor;
 	}
 	
